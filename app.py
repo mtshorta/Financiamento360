@@ -28,6 +28,7 @@ taxa_mensal = (1+taxa_anual/100)**(1/12)-1
 st.write("Com ", taxa_anual,"%","a.a de juros efetivos, temos uma taxa equivalente de juro mensal de: ", taxa_mensal )
 
 st.text('A fórmula para o cálculo da parcela é:')
+st.text('A fórmula para o cálculo da parcela é:')
 st.latex(r'''\text{PMT} = \frac{P \cdot r \cdot (1 + r)^n}{(1 + r)^n - 1}
 ''')
 
