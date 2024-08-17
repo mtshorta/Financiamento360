@@ -17,14 +17,14 @@ range = range(0, 421)
 periodo = st.select_slider(
     "Selecione o período do seu financiamento",
     options=range, value =420)
-st.write(f'O prazo selecionado corresponde à {periodo/12} anos')
+st.write(f'O prazo selecionado corresponde à {round(periodo/12, 2)} anos')
 
 #
 #
 #
 #Seleção do juro anual
 taxa_anual = st.number_input("Insira o valor dos juros efetivos (anual): ")
-taxa_mensal = (1+taxa_anual/100)**(1/12)-1
+taxa_mensal = 100*((1+taxa_anual/100)**(1/12)-1)
 st.write("Com ", taxa_anual,"%","a.a de juros efetivos, temos uma taxa equivalente de juro mensal de: ", taxa_mensal )
 
 st.text('A fórmula para o cálculo da parcela é:')
