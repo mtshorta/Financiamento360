@@ -15,7 +15,7 @@ st.set_page_config(page_title='Financiamento 360')
 #Seleção do prazo do financiamento
 range = range(0, 421)
 periodo = st.select_slider(
-    "Selecione o período do seu financiamento",
+    "Selecione o prazo do seu financiamento",
     options=range, value =420)
 st.write(f'O prazo selecionado corresponde à {round(periodo/12, 2)} anos')
 
